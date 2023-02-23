@@ -1,7 +1,7 @@
 # Write a function called `letter_count` to count the letter
 # occurrence in a string. Use a dictionary.
-#
-# You can iterate over a string one letter at a time using
+
+# u can iterate over a string one letter at a time using
 # a for loop.
 #
 # for letter in "alpha":
@@ -26,3 +26,21 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+def letter_count(str):
+    pass # takes input from str in function call
+    Dict = {}
+    pass # defines an empty dictionary to be assigned value
+    pass # print each index for each letter in str
+    for letter in str:
+        if letter in Dict:
+            pass # if the letter exists in Dict, add 1 to its value
+            Dict[letter] += 1
+        else:
+            Dict[letter] = 1
+    return Dict
+
+Dict = letter_count('racecar')
+pass # pass to <str> in letter_counter fun, which will be defined as an input for Dict
+print(Dict)
+# return the value of each counted letter in the str
